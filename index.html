@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BODY ARCHITECTURE | NOT ISSUED. BUILT.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #ffffff; scroll-behavior: smooth; }
+        .heading-font { font-family: 'Oswald', sans-serif; }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .concrete-bg {
+            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
+                        url('https://www.transparenttextures.com/patterns/concrete-wall.png');
+        }
+
+        .gritty-bg {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                        url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .ba-border { border: 1px solid rgba(255,255,255,0.1); }
+        .accent-line { width: 50px; height: 4px; background: white; margin-bottom: 20px; }
+        .social-btn { transition: all 0.3s ease; border: 1px solid rgba(255,255,255,0.2); }
+        .social-btn:hover { background: white; color: black; transform: translateY(-5px); border-color: white; }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="p-6 flex justify-between items-center border-b border-gray-800 sticky top-0 bg-black/90 backdrop-blur-md z-50">
+        <div class="text-3xl font-black heading-font tracking-tighter">BA<span class="text-white/30">.</span></div>
+        <div class="hidden md:flex space-x-10 text-[10px] font-bold uppercase tracking-[0.3em]">
+            <a href="#philosophy" class="hover:text-gray-400 transition">Philosophy</a>
+            <a href="#blueprint" class="hover:text-gray-400 transition">Blueprint</a>
+            <a href="#community" class="text-white hover:text-gray-400 transition underline underline-offset-8">Community</a>
+        </div>
+        <a href="#community" class="border border-white px-6 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-black transition">Join Us</a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-bg h-[90vh] flex flex-col justify-center items-center text-center px-4">
+        <div class="accent-line"></div>
+        <h2 class="text-sm md:text-lg font-bold tracking-[0.6em] text-gray-300 mb-4 uppercase">Body Architecture</h2>
+        <h1 class="text-7xl md:text-[120px] leading-none font-black mb-8 heading-font italic uppercase tracking-tighter">
+            NOT ISSUED.<br><span class="text-transparent" style="-webkit-text-stroke: 2px white;">BUILT.</span>
+        </h1>
+        <p class="max-w-xl text-gray-300 text-xs md:text-sm leading-loose tracking-widest uppercase mb-10 opacity-80">
+            Discipline. Consistency. Identity. <br>The blueprint for the self-made.
+        </p>
+        <a href="#community" class="bg-white text-black px-12 py-5 text-xs font-bold uppercase tracking-[0.2em] hover:bg-gray-200 transition shadow-2xl">
+            Watch the Build
+        </a>
+    </section>
+
+    <!-- PHILOSOPHY SECTION -->
+    <section id="philosophy" class="concrete-bg py-32 px-6 text-black">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div>
+                <h2 class="text-5xl font-black heading-font uppercase mb-8 leading-none">Your Body is<br>Your Architecture.</h2>
+                <p class="text-xl mb-8 font-medium leading-relaxed italic border-l-4 border-black pl-6">
+                    "You are not born strong — you are built."
+                </p>
+                <div class="grid grid-cols-2 gap-6 text-[10px] font-bold uppercase tracking-widest">
+                    <div class="ba-border border-black p-4">Pain & Progress</div>
+                    <div class="ba-border border-black p-4">Discipline & Identity</div>
+                    <div class="ba-border border-black p-4">Consistency & Power</div>
+                    <div class="ba-border border-black p-4">Self-Mastery & Freedom</div>
+                </div>
+            </div>
+            <div class="bg-black text-white p-12 border-[10px] border-gray-200">
+                <h3 class="font-black uppercase mb-6 text-xl heading-font tracking-widest text-gray-400">Core Philosophy</h3>
+                <ul class="space-y-6 text-sm tracking-wide">
+                    <li class="flex items-start"><span class="mr-4 text-gray-600">01</span> No one is coming to save you.</li>
+                    <li class="flex items-start"><span class="mr-4 text-gray-600">02</span> Discipline is the highest form of self-respect.</li>
+                    <li class="flex items-start"><span class="mr-4 text-gray-600">03</span> We represent self-built individuals. Not influencers. Not hype.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRAND OBJECTIVES -->
+    <section id="blueprint" class="gritty-bg py-32 px-6 border-y border-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-20">
+                <h2 class="text-center text-4xl font-black heading-font uppercase tracking-[0.2em]">The Blueprint</h2>
+                <p class="text-center text-gray-500 text-xs tracking-[0.3em] uppercase mt-4">Brand Evolution Roadmap</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-2">
+                <div class="bg-black/60 backdrop-blur-sm p-10 border border-white/10">
+                    <span class="text-white/20 font-black text-4xl heading-font italic">PHASE 01</span>
+                    <h4 class="font-bold uppercase mt-6 mb-4 tracking-widest">Foundation</h4>
+                    <p class="text-[11px] text-gray-400 leading-relaxed uppercase tracking-tighter">Launch first premium shirt. Build identity before selling. Wear it yourself — become the face[...]
+                </div>
+                <div class="bg-white p-10 border border-white text-black">
+                    <span class="text-black/20 font-black text-4xl heading-font italic">PHASE 02</span>
+                    <h4 class="font-bold uppercase mt-6 mb-4 tracking-widest text-red-600">IN PROGRESS</h4>
+                    <p class="text-[11px] text-gray-700 leading-relaxed uppercase tracking-tighter font-bold">"If you wear BA, you're serious." Start small drops. Limited release strategy.</p>
+                </div>
+                <div class="bg-black/60 backdrop-blur-sm p-10 border border-white/10 opacity-60">
+                    <span class="text_white/20 font-black text-4xl heading-font italic text-gray-700">PHASE 03</span>
+                    <h4 class="font-bold uppercase mt-6 mb-4 tracking-widest">Expansion</h4>
+                    <p class="text-[11px] text-gray-500 leading-relaxed uppercase tracking-tighter">Full fitness line. Collaborations with gyms. "A World Home" mindset.</p>
+                </div>
+                <div class="bg-black/60 backdrop-blur-sm p-10 border border-white/10 opacity-60">
+                    <span class="text-white/20 font-black text-4xl heading-font italic text-gray-700">PHASE 04</span>
+                    <h4 class="font-bold uppercase mt-6 mb-4 tracking-widest">Legacy</h4>
+                    <p class="text-[11px] text-gray-500 leading-relaxed uppercase tracking-tighter">Expand internationally. Build a culture, not just a brand.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SOCIAL MEDIA SECTION (Replaced Email) -->
+    <section id="community" class="py-32 px-6 text-center bg-black">
+        <h2 class="text-5xl font-black mb-6 heading-font italic uppercase tracking-tighter">YOU ARE THE BRAND.</h2>
+        <div class="accent-line mx-auto"></div>
+        <p class="max-w-2xl mx-auto text-gray-500 mb-12 text-[11px] uppercase tracking-[0.4em] leading-loose">
+            Your physique is proof. Your discipline is marketing. Your story is branding.<br>
+            Follow the construction in real-time.
+        </p>
+        
+        <!-- Social Buttons -->
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6 max-w-2xl mx-auto">
+            <a href="https://www.tiktok.com/@body.architecture?_r=1&_t=ZS-97ThnSg3jhR" target="_blank" class="social-btn w-full md:w-1/2 py-5 flex items-center justify-center gap-4 text-xs font-b[...]">
+                <i class="fab fa-tiktok text-xl"></i> TikTok
+            </a>
+            <a href="https://www.instagram.com/bodyarchitecture2026?igsh=cWtqOG1vejh0OG4z" target="_blank" class="social-btn w-full md:w-1/2 py-5 flex items-center justify-center gap-4 text-xs fo[...]">
+                <i class="fab fa-instagram text-xl"></i> Instagram
+            </a>
+        </div>
+    </section>
+
+    <footer class="p-12 text-center text-[9px] text-gray-800 uppercase tracking-[0.5em] border-t border-gray-900">
+        Built in Silence. Built with Purpose. Built to Inspire. <br><br>
+        &copy; 2026 Body Architecture. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
