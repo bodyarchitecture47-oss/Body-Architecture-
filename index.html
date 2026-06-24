@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BODY ARCHITECTURE | NOT ISSUED. BUILT.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --brand-red: #cc0000;
+            --dark-bg: #000000;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: var(--dark-bg); color: #ffffff; scroll-behavior: smooth; }
+        .heading-font { font-family: 'Oswald', sans-serif; }
+        
+        /* Premium Industrial Gym Background */
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.95)), 
+                        url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed;
+        }
+
+        .philosophy-section {
+            background: linear-gradient(180deg, #000000 0%, #1a0000 100%);
+            border-top: 1px solid #330000;
+        }
+
+        .phase-card { 
+            background: rgba(10, 10, 10, 0.8);
+            border: 1px solid #222;
+            backdrop-filter: blur(10px);
+            transition: all 0.4s ease;
+        }
+        .phase-card:hover { border-color: var(--brand-red); transform: translateY(-5px); }
+        
+        .active-phase { 
+            background: var(--brand-red) !important; 
+            border: none !important;
+            box-shadow: 0 10px 40px rgba(204, 0, 0, 0.4);
+        }
+
+        .philosophy-num { 
+            font-size: 6rem; 
+            color: var(--brand-red);
+            opacity: 0.15; 
+            font-weight: 900; 
+            line-height: 0.8; 
+        }
+
+        .social-btn { 
+            transition: all 0.3s ease; 
+            border: 1px solid #222; 
+            background: #0a0a0a;
+        }
+        .social-btn:hover { 
+            background: var(--brand-red); 
+            border-color: var(--brand-red);
+            color: white; 
+        }
+
+        .red-glow-text {
+            text-shadow: 0 0 25px rgba(204, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="p-6 flex justify-between items-center border-b border-white/5 sticky top-0 bg-black/98 backdrop-blur-md z-50">
+        <div class="text-3xl font-black heading-font tracking-tighter italic">B<span class="text-red-600">A</span></div>
+        <div class="hidden md:flex space-x-10 text-[10px] font-bold uppercase tracking-[0.5em]">
+            <a href="#philosophy" class="hover:text-red-500 transition">Philosophy</a>
+            <a href="#blueprint" class="hover:text-red-500 transition">The Blueprint</a>
+            <a href="#community" class="hover:text-red-500 transition">Community</a>
+        </div>
+        <a href="#community" class="bg-red-600 text-white px-8 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-black transition">Join Us</a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-bg h-[95vh] flex flex-col justify-center items-center text-center px-4">
+        <div class="w-20 h-1 bg-red-600 mb-10"></div>
+        <h2 class="text-xs font-bold tracking-[1em] text-gray-400 mb-6 uppercase">Body Architecture</h2>
+        <h1 class="text-6xl md:text-[130px] leading-none font-black mb-10 heading-font italic uppercase tracking-tighter">
+            NOT ISSUED.<br><span class="text-white red-glow-text">BUILT.</span>
+        </h1>
+        <p class="max-w-xl text-gray-400 text-[11px] md:text-sm leading-loose tracking-[0.4em] uppercase mb-12">
+            Discipline. Consistency. Identity.
+        </p>
+        <a href="#philosophy" class="border border-white text-white px-16 py-6 text-[10px] font-black uppercase tracking-[0.4em] hover:bg-red-600 hover:border-red-600 transition duration-500">
+            Show the Work
+        </a>
+    </section>
+
+    <!-- PHILOSOPHY SECTION -->
+    <section id="philosophy" class="philosophy-section py-40 px-6">
+        <div class="max-w-5xl mx-auto text-center md:text-left">
+            <div class="mb-32">
+                <h2 class="text-6xl md:text-9xl font-black heading-font uppercase mb-6 italic tracking-tighter">Core <span class="text-red-600">Philosophy</span></h2>
+                <div class="w-24 h-2 bg-red-600 mx-auto md:mx-0"></div>
+            </div>
+
+            <div class="space-y-32">
+                <div class="flex flex-col md:flex-row items-center md:items-start group">
+                    <span class="philosophy-num heading-font md:mr-16">01</span>
+                    <h3 class="text-3xl md:text-6xl font-black heading-font uppercase leading-tight italic">Nobody owes you <span class="text-red-600">anything.</span></h3>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center md:items-start group">
+                    <span class="philosophy-num heading-font md:mr-16">02</span>
+                    <h3 class="text-3xl md:text-6xl font-black heading-font uppercase leading-tight italic">Results respect effort. <span class="text-red-600 text-glow">Not excuses.</span></h3>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center md:items-start group">
+                    <span class="philosophy-num heading-font md:mr-16">03</span>
+                    <h3 class="text-3xl md:text-6xl font-black heading-font uppercase leading-tight italic">The work gets done. <br><span class="text-gray-500">No matter how you feel.</span></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE BLUEPRINT -->
+    <section id="blueprint" class="py-40 px-6 bg-black">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-24 text-center">
+                <h2 class="text-5xl font-black heading-font uppercase tracking-widest italic">The <span class="text-red-600">Blueprint</span></h2>
+                <div class="w-12 h-1 bg-red-600 mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
+                <div class="phase-card p-12 min-h-[480px]">
+                    <span class="text-red-600 font-black text-4xl heading-font italic opacity-20">PHASE 01</span>
+                    <h4 class="font-black uppercase mt-10 mb-8 tracking-widest text-2xl">Foundation</h4>
+                    <p class="text-[12px] text-gray-400 uppercase tracking-widest leading-loose italic">Face the man in the mirror. <br><br> Conquer him first.</p>
+                </div>
+
+                <div class="phase-card active-phase p-12 min-h-[480px]">
+                    <div class="flex justify-between items-start">
+                        <span class="text-white/30 font-black text-4xl heading-font italic">PHASE 02</span>
+                        <span class="bg-black text-white text-[9px] px-3 py-1 font-bold tracking-widest uppercase italic">In Progress</span>
+                    </div>
+                    <h4 class="font-black uppercase mt-10 mb-8 tracking-widest text-2xl">Construction</h4>
+                    <p class="text-[13px] leading-loose uppercase tracking-wider font-black text-white">
+                        The work continues. <br><br> No applause. No shortcuts. No excuses. <br><br>
+                        Just the daily battle between who we are and who we can become.
+                    </p>
+                </div>
+
+                <div class="phase-card p-12 min-h-[480px] opacity-30">
+                    <span class="text-white/10 font-black text-4xl heading-font italic">PHASE 03</span>
+                    <h4 class="font-black uppercase mt-10 mb-8 tracking-widest text-2xl">Expansion</h4>
+                    <p class="text-[12px] text-gray-500 uppercase tracking-widest leading-loose">Turn pain into strength. <br> Turn setbacks into lessons. <br> Become the example.</p>
+                </div>
+
+                <div class="phase-card p-12 min-h-[480px] opacity-30">
+                    <span class="text-white/10 font-black text-4xl heading-font italic">PHASE 04</span>
+                    <h4 class="font-black uppercase mt-10 mb-8 tracking-widest text-2xl">Legacy</h4>
+                    <p class="text-[12px] text-gray-500 uppercase tracking-widest leading-loose">The sweat. The sacrifice. The lives we changed. <br><br> Built to leave a mark.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMUNITY (SOCIALS) -->
+    <section id="community" class="py-48 px-6 text-center bg-black border-t border-red-900/10">
+        <h2 class="text-6xl md:text-9xl font-black mb-10 heading-font italic uppercase tracking-tighter">YOU ARE THE <span class="text-red-600 text-glow">BRAND.</span></h2>
+        <p class="max-w-2xl mx-auto text-gray-500 mb-20 text-[11px] uppercase tracking-[0.5em] leading-[2.5]">Join the Elite Community</p>
+        
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8 max-w-4xl mx-auto">
+            <a href="https://www.tiktok.com/@body.architecture?_r=1&_t=ZS-97ThnSg3jhR" target="_blank" class="social-btn w-full md:w-1/2 py-8 flex items-center justify-center gap-5 text-[11px] fo[...]">
+                <i class="fab fa-tiktok text-2xl text-red-600"></i> TikTok
+            </a>
+            <a href="https://www.instagram.com/bodyarchitecture2026?igsh=cWtqOG1vejh0OG4z" target="_blank" class="social-btn w-full md:w-1/2 py-8 flex items-center justify-center gap-5 text-[11px[...]">
+                <i class="fab fa-instagram text-2xl text-red-600"></i> Instagram
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="p-20 text-center text-[10px] text-gray-800 uppercase tracking-[0.8em] border-t border-white/5 bg-black">
+        BUILT IN SILENCE. <span class="text-red-900">BUILT WITH PURPOSE.</span> BUILT TO INSPIRE. <br><br>
+        &copy; 2026 BODY ARCHITECTURE.
+    </footer>
+
+</body>
+</html>
